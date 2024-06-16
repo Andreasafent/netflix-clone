@@ -1,0 +1,434 @@
+/* ----------------HEADER------------------- */
+
+header{
+    /* border:solid 2px red; */
+    position:relative;
+    height:730px;
+}
+header::before{
+    content:'';
+    position:absolute;
+    display: block;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    filter: brightness(0.4);
+    box-shadow: 0px 0px 144px -3px rgba(0,0,0,0.74) inset;
+    -webkit-box-shadow: 0px 0px 144px -3px rgba(0,0,0,0.74) inset;
+    -moz-box-shadow: 0px 0px 144px -3px rgba(0,0,0,0.74) inset;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;    
+    position: relative;
+    
+    color:white; 
+}
+.header-top-right{
+    display: flex;
+    width:300px;
+    align-items: center;
+}
+.logo img{
+    margin-top:25px;
+    width:44%;
+    margin-left:52px;
+}
+.select{
+    color:white;
+    background-color: transparent;
+    padding:10px;
+    border:solid 1px white;
+    margin-top:25px;
+    border-radius: 5px;
+}
+#select-header{
+    opacity:1 !important;
+}
+.select option{
+    
+    background-color: gray;
+}
+
+.sign-in-button{
+    margin-top:25px;
+    border:none;
+    color:white;
+    background-color: #e50914;
+    padding:7px;
+    margin-left:30px;
+    width:90px;
+    height:35px;
+    border-radius: 5px;
+    font-size: 1rem;   
+}
+
+.sign-in-button:hover{
+    cursor:pointer;
+}
+.header-main{
+    position: absolute;
+    display: flex;
+    color: white;
+    justify-content: center;
+    width:99vw;
+    height:600px;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-weight: normal;
+    margin-top: -20px;
+}
+h3{
+    font-weight: normal;
+    margin-top:20px;
+}
+.get-started-container{
+    display: flex;
+    align-items: center;
+}
+.get-started-container input{
+    width:500px;
+    height:70px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    padding-left: 10px;
+    
+}
+.get-started-container input::placeholder{
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+.get-started{
+    color:white;
+    border: none;
+    background-color: #e50914;
+    height:75px;
+    width:250px;
+    font-size: 1.7rem;
+    font-weight:300;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.get-started:hover{
+    filter: brightness(1.1);
+    cursor:pointer
+}
+
+hr{
+    border:solid 4px #303030;
+    margin-top:0;
+    opacity: 0.7;
+}
+
+/* ----------------ENJOY ON YOUR TV------------------- */
+.enjoy{
+    background-color: #000;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:-10px;
+    color:white;
+    padding-bottom: 30px;
+}
+.enjoy h2{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top:10px;
+    margin-left:10px;
+}
+.enjoy h3{
+    font-size: 1.6rem;
+    margin-left:10px;
+    line-height:35px;
+}
+.enjoy-text-container{
+    margin-top:70px;
+}
+.enjoy-video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    margin-left:50px;
+    height:400px;    
+}
+/* ------------------------------VIDEO IN IMAGE--------------------------------- */
+.enjoy-video-container img{
+    width:28%;
+    position: absolute;
+    
+}
+.enjoy-video-container video{
+    position: relative;
+    width:82%;
+    margin-top:-12px;
+}
+
+/* ----------------DOWNLOAD------------------- */
+
+.download{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: #000;
+    margin-top:-10px;  
+    height:460px;  
+}
+
+.download-video-container .phone{
+    width:85%;
+    margin-left:-80px;
+    margin-top:-50px;
+}
+
+.download-text-container{
+    margin-top:30px;
+    
+}
+.download-text-container h2{
+    font-size: 3rem;
+    font-weight: bold;    
+}
+
+.download-text-container h3{
+    margin-top:-20px;
+    font-size: 1.6rem;
+}
+
+.images-container{
+    position: relative;
+}
+
+.downloading-sub-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:solid 2px #303030; 
+    border-radius:15px;
+    position: absolute;
+    top:180px;
+    left:0;
+    background-color:black; 
+    padding:0.5em 0.75em;
+    height:90px;
+}
+
+.downloading-sub-text{
+    margin-left:-60px;
+    margin-right:40px;
+}
+
+.downloading-sub-text p{
+    line-height: 20px;
+    font-weight: bold;
+    margin-left:-10px;
+}
+
+.downloading{
+    font-weight: normal;
+    color:#0071eb;
+    font-size:15px;
+}
+
+.boxshot img{
+    width:42%;    
+}
+
+.downloading-animation img{
+    width:100%;
+    margin-right:-60px;
+}
+
+/* ----------------------WATCH EVERYWHERE -----------------------*/
+
+.watch-everywhere-container{
+    color:white; 
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.watch-everywhere-text{
+    margin-right:100px;
+    margin-top:75px;
+}
+.watch-everywhere-text h2{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.watch-everywhere-text h3{
+    font-size: 1.6rem;
+    line-height:35px;
+    margin-top:-10px;
+}
+
+.device-pile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:50px;
+}
+.device-pile img{
+    position:absolute;  
+    width:28%;  
+}
+.device-pile video{
+    position:relative;
+    width:70%;
+    margin-top:-130px;
+}
+
+/* --------------------------KIDS-------------------------- */
+
+.kids-container{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:90px;
+    padding-bottom:50px;
+}
+
+.kids-img img{
+    width:90%;
+    margin-right: -75px;
+    margin-top:-10px;
+}
+
+.kids-text{
+    margin-top:50px;
+}
+
+.kids-text h2{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.kids-text h3{
+    font-size: 1.6rem;
+    line-height:35px;
+    margin-top:-15px;
+}
+
+/* --------------------------FAQ-------------------------- */
+
+.faq-container{
+    color:white;
+    display:grid;
+    justify-content: center;
+    text-align: center;
+    padding-top:90px;
+    padding-bottom:90px;
+}
+
+.faq-title h2{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.single-question-container{
+    display: grid;
+    background-color: #303030;
+    width:825px;
+    margin-bottom:8px;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    padding:0 25px;
+    border-bottom: 1px solid #000;
+    font-size: 1.5rem;
+    position: relative;
+}
+.answer{
+    display: none;
+    text-align: left;
+    padding:10px 25px;
+    font-size: 1.6rem;
+    line-height: 30px;
+}
+
+.show .answer{
+    display: block;
+}
+
+.question:hover{
+    cursor:pointer;
+}
+.svg-icon-thin-x{
+    fill: #fff;
+    height: 1em;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    width: 1em;
+}
+
+.show .svg-icon {
+    transform: translateY(-50%);
+}
+.ready-to-watch p{
+    font-size: 1.2rem;
+}
+
+.get-started-container-bottom{
+    margin:0 auto;
+}
+
+/* --------------------------FOOTER-------------------------- */
+footer{
+    color:white;
+    padding:90px 0;
+    display:flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width:1200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;    
+}
+
+.footer-links{
+    display:flex;
+    margin-left:-40px;
+}
+.footer-links div{
+    padding:10px 50px;
+    text-align: left;
+}
+.footer-links div nav{
+    margin-left:-50px;
+}
+.footer-links div nav ul li{
+    line-height:30px;
+    font-size: 13px;
+}
+.footer-links div nav ul li:hover{
+    text-decoration: underline;
+}
+footer p,a,select,option{
+    opacity:0.5;
+}
+footer option{
+    background-color: transparent;
+}
+.contact-us:hover{
+    text-decoration: underline;
+    cursor:pointer
+}
